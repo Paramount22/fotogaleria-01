@@ -7,6 +7,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -23,9 +30,9 @@
     <section class="galleries-set container">
       <h3>Fotogaléria</h3>
       <h4>Kategórie</h4>
-      <div class="categories">
+      <div class="items">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <a href="">
               <div class="card">
                 <img
@@ -41,7 +48,7 @@
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <a href="">
               <div class="card">
                 <img
@@ -57,7 +64,7 @@
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <a href="">
               <div class="card">
                 <img
@@ -72,7 +79,7 @@
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <a href="">
               <div class="card">
                 <img
@@ -87,7 +94,7 @@
             </a>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <a href="">
               <div class="card">
                 <img
@@ -101,9 +108,57 @@
               </div>
             </a>
           </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <a href="#" data-toggle="modal" data-target="#add-new-category">
+              <div class="card">
+                <div class="card-body add-category">
+                  <!-- Button trigger modal -->
+                  <i class="fas fa-plus"></i>
+                  <p class="card-text modal-text">Pridať kategóriu</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="add-new-category"
+      tabindex="-1"
+      aria-labelledby="add-new-categoryLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="add-new-categoryLabel">
+              Pridať kategóriu
+            </h5>
+
+            <button
+              type="link"
+              class="close-modal"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span class="close-mark" aria-hidden="true">&times; </span>
+              <span class="close-word">Zavrieť</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <input type="text" />
+              <button type="button" class="btn btn-success">
+                <i class="fas fa-plus"></i> Pridať
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
