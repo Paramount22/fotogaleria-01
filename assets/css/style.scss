@@ -1,0 +1,54 @@
+.categories {
+  margin-top: 2rem;
+
+  a {
+    color: inherit;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.card {
+  width: 15.5rem;
+  text-align: center;
+  height: 14.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 1px 1px rgb(214, 214, 214);
+  transition: 0.3s all ease;
+  color: rgb(107, 107, 107);
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 3px 10px rgb(214, 214, 214);
+    margin-top: -0.5rem;
+    overflow: visible;
+    small {
+      opacity: 1;
+    }
+  }
+
+  .card-boody {
+    transition: 0.5s all ease;
+  }
+
+  small {
+    position: relative;
+    top: -1.2rem;
+    opacity: 0;
+    transition: 0.3s all ease;
+    color: gray;
+    font-weight: 600;
+  }
+
+  .card-text {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+h4 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.795);
+}
