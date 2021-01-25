@@ -99,6 +99,7 @@
           box-shadow: 0px 1px 1px #d6d6d6;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  border: none;
   color: #6b6b6b;
 }
 
@@ -162,6 +163,10 @@
           flex-direction: column;
 }
 
+.add-card {
+  border: 2px solid #f0f0f0;
+}
+
 @media (max-width: 560px) {
   .card {
     width: 100%;
@@ -191,6 +196,8 @@ header {
   background-size: cover;
   -webkit-filter: blur(4px);
           filter: blur(4px);
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 header::before {

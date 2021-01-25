@@ -5,6 +5,7 @@ header {
   background-position: center;
   background-size: cover;
   filter: blur(4px);
+  transition: 0.3s all ease;
 }
 
 header::before {

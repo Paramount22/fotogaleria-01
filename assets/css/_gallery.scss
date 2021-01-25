@@ -36,6 +36,7 @@
   margin-bottom: 2rem;
   box-shadow: 0px 1px 1px $secondery;
   transition: 0.3s all ease;
+  border: none;
   color: $third;
 
   &:hover,
@@ -84,4 +85,8 @@
     align-items: center;
     flex-direction: column;
   }
+}
+
+.add-card {
+  border: 2px solid lighten($secondery, 10%);
 }
