@@ -1,0 +1,20 @@
+@media (max-width: 560px) {
+  .card {
+    width: 100%;
+    min-height: 26rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .card {
+    width: 100%;
+    min-height: 20rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .card {
+    width: 100%;
+    min-height: 16rem;
+  }
+}
