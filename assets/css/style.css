@@ -196,8 +196,8 @@ header {
   background-size: cover;
   -webkit-filter: blur(4px);
           filter: blur(4px);
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 
 header::before {
@@ -208,5 +208,28 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@-webkit-keyframes animation-background {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-background {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.changeBackground {
+  -webkit-animation: animation-background 0.5s ease-in-out;
+          animation: animation-background 0.5s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

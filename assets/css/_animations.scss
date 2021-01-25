@@ -1,0 +1,13 @@
+@keyframes animation-background {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.changeBackground {
+  animation: animation-background 0.5s ease-in-out;
+}
