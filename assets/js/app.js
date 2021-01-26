@@ -1,7 +1,6 @@
 // selectors
 const header = document.querySelector('header');
 const cards = document.querySelectorAll('.category-item');
-const images = document.querySelectorAll('.item-image');
 
 // functions
 const changeBackground = (index) => {

@@ -136,6 +136,8 @@
 .galleries-set .fa-arrow-left {
   color: white;
   margin-right: 0.3rem;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .items {
@@ -335,5 +337,19 @@ header::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.lightbox .lb-image {
+  border-radius: 0;
+  border: none;
+}
+
+.lb-outerContainer {
+  border-radius: 0;
+}
+
+.lightboxOverlay {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
