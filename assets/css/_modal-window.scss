@@ -55,3 +55,48 @@
   right: 1rem;
   top: 0;
 }
+
+.add-photo-btn {
+  float: right;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.add-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  border: 3px dashed $secondery;
+  padding: 1rem 0;
+  color: $primary;
+
+  p {
+    margin: 0.2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  small {
+    text-transform: lowercase;
+    margin-bottom: 0.3rem;
+  }
+
+  .fa-plus {
+    position: relative;
+    font-size: 1.1rem;
+    right: 1rem;
+    top: 0.4rem;
+  }
+}
+.modal-footer {
+  border-top: none;
+}

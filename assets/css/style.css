@@ -59,6 +59,61 @@
   top: 0;
 }
 
+.add-photo-btn {
+  float: right;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.add-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  border: 3px dashed #d6d6d6;
+  padding: 1rem 0;
+  color: #aaaaaa;
+}
+
+.add-content p {
+  margin: 0.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.add-content small {
+  text-transform: lowercase;
+  margin-bottom: 0.3rem;
+}
+
+.add-content .fa-plus {
+  position: relative;
+  font-size: 1.1rem;
+  right: 1rem;
+  top: 0.4rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
 .galleries-set {
   position: relative;
   top: -15rem;
@@ -76,6 +131,11 @@
   text-transform: uppercase;
   margin-bottom: 2rem;
   color: white;
+}
+
+.galleries-set .fa-arrow-left {
+  color: white;
+  margin-right: 0.3rem;
 }
 
 .items {
@@ -138,15 +198,6 @@
   font-weight: 600;
 }
 
-.card i {
-  cursor: pointer;
-  border: 4px solid #aaaaaa;
-  color: #aaaaaa;
-  padding: 0.5rem;
-  border-radius: 50%;
-  font-size: 1.4rem;
-}
-
 .card .add-category {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,6 +212,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.card .add-category .fa-plus {
+  cursor: pointer;
+  border: 4px solid #aaaaaa;
+  color: #aaaaaa;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
 }
 
 .add-card {
@@ -229,7 +289,51 @@ header::before {
 }
 
 .changeBackground {
-  -webkit-animation: animation-background 0.5s ease-in-out;
-          animation: animation-background 0.5s ease-in-out;
+  -webkit-animation: animation-background 0.4s ease-in-out;
+          animation: animation-background 0.4s ease-in-out;
+}
+
+.gallery-single .item-image {
+  height: 14rem;
+}
+
+.gallery-single .card-img-top {
+  height: 100%;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.gallery-single .add-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 14rem;
+}
+
+.gallery-single .add-photo .fa-plus {
+  position: relative;
+  font-size: 1.1rem;
+  right: 1rem;
+  top: 0.4rem;
+}
+
+.gallery-single button {
+  float: inline-end;
+}
+
+.architect-gallery header {
+  background: url("../images/pexels-photo-261187.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
