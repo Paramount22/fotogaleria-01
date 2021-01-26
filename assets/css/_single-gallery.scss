@@ -1,0 +1,36 @@
+.gallery-single {
+  .item-image {
+    height: 14rem;
+  }
+  .card-img-top {
+    height: 100%;
+    border-radius: calc(0.25rem - 1px);
+  }
+
+  .add-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 14rem;
+
+    .fa-plus {
+      position: relative;
+      font-size: 1.1rem;
+      right: 1rem;
+      top: 0.4rem;
+    }
+  }
+  button {
+    float: inline-end;
+  }
+}
+
+.architect-gallery {
+  header {
+    background: url('../images/pexels-photo-261187.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
